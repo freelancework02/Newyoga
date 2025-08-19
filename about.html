@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Master Deepak / The Founder</title>
+  <!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAI8G9UuT5V7M6aX5d9XK27xN1lEWLEB5r0c9gH+0jxZyQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  
+
+  <style>
+    :root {
+      --primary-color: #2c5530;
+      --secondary-color: #f8f9fa;
+      --accent-color: #f4a261;
+      --gold-color: #d4af37;
+      --text-dark: #2c3e50;
+      --text-light: #7f8c8d;
+      --background-light: #f8f9fa;
+      --white: #fff;
+      --gradient: linear-gradient(135deg, #2c5530 0%, #7fb069 100%);
+      --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f4a261 100%);
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (min-width: 950px) {
+      .about-parent {
+        flex-direction: row !important;
+        min-height: 500px !important;
+      }
+
+      .about-image-section,
+      .about-text-section {
+        width: 50% !important;
+        min-height: 500px !important;
+      }
+
+      .about-image-section {
+        padding: 0 !important;
+        justify-content: flex-end !important;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .about-text-section {
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 3rem 2.5rem !important;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .about-parent {
+        min-height: 300px !important;
+      }
+
+      .about-text-section {
+        padding: 1rem !important;
+      }
+
+      .about-image-section img {
+        max-width: 100%;
+        margin: 1.2rem 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .about-parent {
+        min-height: 100px !important;
+      }
+
+      .about-text-section {
+        padding: 1rem 0.2rem !important;
+      }
+
+      .about-btn {
+        padding: 0.65rem 1.4rem !important;
+        font-size: 0.92rem !important;
+      }
+
+      #about-founder h2 {
+        font-size: 1.25rem !important;
+      }
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--gradient);
+      color: white;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-4px) scale(1.05);
+      background: var(--gradient-gold);
+      box-shadow: var(--shadow-hover);
+    }
+  </style>
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-white font-[Poppins]">
+
+  <!-- Header -->
+  <header class="header shadow-md sticky top-0 z-50 bg-white" id="topNav">
+    <div class="nav-container flex justify-between items-center px-6 py-4">
+      <a href="#" class="logo flex items-center gap-2">
+        <img src="https://aadiyogacenterphuket.com/assets/demologo-wsvi2NRq.webp" alt="Yoga Center Logo"
+          class="h-10 w-auto">
+        <span class="logo-text font-semibold text-lg text-[var(--primary-color)]">Aadi Yoga Center</span>
+      </a>
+      <ul class="hidden md:flex gap-6 text-[var(--text-dark)] font-medium">
+        <li><a href="./index.html" class="hover:text-[var(--accent-color)]">Home</a></li>
+        <li><a href="#about" class="hover:text-[var(--accent-color)]">Yoga TTC</a></li>
+        <li><a href="./retreat.html" class="hover:text-[var(--accent-color)]">Retreats</a></li>
+        <li><a href="./about.html" class="hover:text-[var(--accent-color)]">About</a></li>
+        <li><a href="https://aadiyogacenterphuket.com/aboutus/gallery" class="hover:text-[var(--accent-color)]">Gallery</a></li>
+        <li><a href="./index.html" class="hover:text-[var(--accent-color)]">Contact</a></li>
+      </ul>
+      <a href="#book"
+        class="hidden md:inline-block bg-[var(--primary-color)] text-white px-4 py-2 rounded-full shadow hover:bg-[var(--accent-color)] transition">Book
+        Now</a>
+    </div>
+  </header>
+
+  <!-- Founder Section -->
+  <section id="about-founder"
+    class="my-12 max-w-6xl mx-auto rounded-2xl shadow-lg overflow-hidden bg-white about-parent flex flex-col">
+    <!-- Image -->
+    <div
+      class="about-image-section flex items-center justify-center bg-white p-6 md:p-0">
+      <img src="https://aadiyogacenterphuket.com/assets/deepaksir-CCns89iX.jpg" alt="Master Deepak in meditation"
+        class="rounded-2xl shadow-lg w-full max-w-[540px] object-cover">
+    </div>
+
+    <!-- Text -->
+    <div class="about-text-section bg-white flex items-center justify-center p-8 md:p-12">
+      <div class="max-w-2xl">
+        <h2
+          class="font-serif text-3xl md:text-4xl font-bold text-center mb-6 text-[var(--text-dark)]">
+          Master Deepak / The Founder
+        </h2>
+
+        <p class="text-[var(--text-dark)] mb-4 leading-relaxed">
+          Master Deepak’s journey is a remarkable blend of ancient tradition and modern scholarship. Born in the sacred
+          city of Rishikesh, in the Himalayas, India, he hails from a venerable priestly family renowned for its profound dedication to Sanskrit and yoga. For eight generations, his family has been custodians of yoga teachings and Sanskrit scholarship, preserving a legacy that Master Deepak now carries forward with pride and devotion.
+        </p>
+
+        <p class="text-[var(--text-dark)] mb-4 leading-relaxed">
+          From an early age, Deepak was immersed in the spiritual and intellectual heritage of his ancestors. Guided by his guru, Mahamandaleshwar Dr. Rameshwar Das, he deepened his understanding of authentic yoga and spiritual practice.
+        </p>
+
+        <p class="text-[var(--text-dark)] mb-4 leading-relaxed">
+          Despite his rich spiritual background, Master Deepak pursued academic excellence with master’s degrees in Yoga, Linguistics, Physics, and International Relations while also mastering Chinese. After years in corporate life, the call of yoga brought him back to his roots.
+        </p>
+
+        <p class="text-[var(--text-dark)] leading-relaxed">
+          Today, he is dedicated to spreading authentic yoga, blending traditional wisdom with modern insights. His teachings continue to inspire students worldwide, keeping alive the sacred legacy of his family.
+        </p>
+
+        <!-- Social Icons -->
+      <!-- <div class="social-icons flex justify-center gap-4 mt-10 text-2xl">
+    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Extended Bio -->
+  <section class="max-w-5xl mx-auto px-6 md:px-0 mb-16">
+    <p class="text-[var(--text-dark)] mb-4 leading-relaxed">
+   
+Master Deepak’s upbringing in a priest family in Rishikesh profoundly influenced his worldview and life path. Growing up amidst the sacred rituals and spiritual practices that marked his family’s daily life, he was introduced early to the deep roots of Hindu tradition. His family, being Sanskrit scholars and custodians of yoga for eight generations, nurtured a home environment rich with sacred chants, Vedic scriptures, and disciplined yoga practices.From childhood, Deepak was exposed to the rhythms of temple life—hearing the resonant sounds of mantras during pujas, witnessing the meticulous preparation of rituals, and participating in festivals that honored ancient deities and philosophical teachings. This immersive experience instilled in him a sense of reverence for knowledge, discipline, and spiritual connection. The Sanskrit language, often considered the language of the gods, was not just a subject in his household—it was a living tradition, a bridge to understanding the profound scriptures that his ancestors had preserved.Being raised in this environment naturally cultivated in Deepak a deep respect for yoga not merely as physical exercise but as a holistic spiritual discipline
+
+    </p>
+    <p class="text-[var(--text-dark)] leading-relaxed">
+    The presence of his esteemed guru, Mahamandaleshwar Dr. Rameshwar Das, further anchored his spiritual development. The guru’s guidance helped Deepak appreciate the authentic and transformative power of yoga beyond the surface, emphasizing its role in self-realization and service.Despite stepping into the modern world with advanced studies in International Relations and linguistics, Deepak’s formative years in his priestly family remained the cornerstone of his identity. This unique blend of ancient wisdom and contemporary knowledge led him to choose a path dedicated to preserving and sharing authentic yoga teachings, ensuring that the legacy of his forebears continues to illuminate lives in today’s world.
+</p>
+  </section>
+
+</body>
+</html>

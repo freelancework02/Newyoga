@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Retreat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+      <!-- Header -->
+  <header class="header shadow-md sticky top-0 z-50 bg-white" id="topNav">
+    <div class="nav-container flex justify-between items-center px-6 py-4">
+      <a href="#" class="logo flex items-center gap-2">
+        <img src="https://aadiyogacenterphuket.com/assets/demologo-wsvi2NRq.webp" alt="Yoga Center Logo"
+          class="h-10 w-auto">
+        <span class="logo-text font-semibold text-lg text-[var(--primary-color)]">Aadi Yoga Center</span>
+      </a>
+      <ul class="hidden md:flex gap-6 text-[var(--text-dark)] font-medium">
+        <li><a href="./index.html" class="hover:text-[var(--accent-color)]">Home</a></li>
+        <li><a href="#about" class="hover:text-[var(--accent-color)]">Yoga TTC</a></li>
+        <li><a href="./retreat.html" class="hover:text-[var(--accent-color)]">Retreats</a></li>
+        <li><a href="./about.html" class="hover:text-[var(--accent-color)]">About</a></li>
+        <li><a href="https://aadiyogacenterphuket.com/aboutus/gallery" class="hover:text-[var(--accent-color)]">Gallery</a></li>
+        <li><a href="./index.html" class="hover:text-[var(--accent-color)]">Contact</a></li>
+      </ul>
+      <a href="#book"
+        class="hidden md:inline-block bg-[var(--primary-color)] text-white px-4 py-2 rounded-full shadow hover:bg-[var(--accent-color)] transition">Book
+        Now</a>
+    </div>
+  </header>
+
+    <!-- Hero Section with Background -->
+    <header class="relative h-[60vh] flex items-center justify-center text-center text-white bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1600&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-4xl md:text-5xl font-bold">Yoga Retreat</h1>
+            <p class="text-lg mt-3">1/3/5/7 Day Wellness Retreat with Yoga, Meditation, Sound Therapy and More in
+                Patong, Phuket</p>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="max-w-6xl mx-auto px-4 py-12 text-center">
+        <p class="text-lg leading-relaxed">
+            Join <span class="font-semibold"> Aadi Yoga & Sound Healing Centre</span> on this energising yoga retreat in
+            Patong, Phuket, Thailand. You will enjoy a wide variety of yoga, Pilates and meditation classes suitable for
+            all practitioner levels. The program is designed to support a holistic experience and promote a deeper
+            connection with your body, mind, and spirit. Alongside the daily classes, Wonderland Healing Centre offers
+            occasional harmonising workshops.
+        </p>
+    </section>
+
+    <!-- Highlights with image -->
+    <section class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center px-4 py-12">
+        <div>
+            <h2 class="text-3xl font-bold mb-4">Highlights</h2>
+            <ul class="list-disc pl-6 space-y-2 text-lg">
+                <li>Yoga, meditation, sound healing, breathwork, and much more</li>
+                <li>Access to the swimming pool and herbal steam sauna</li>
+                <li>1/2/4/6 nights accommodation</li>
+                <li>Daily vegan breakfast, lunch, and dinner</li>
+                <li>Tropical welcome drink on arrival</li>
+            </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=900&q=80"
+            alt="Yoga Session" class="rounded-2xl shadow-md w-full h-[350px] object-cover">
+    </section>
+
+    <!-- Skill Levels & Yoga Styles with image -->
+    <section class="bg-white shadow-md max-w-6xl mx-auto rounded-2xl p-8 my-12 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+            <h2 class="text-3xl font-bold mb-6">Skill Levels</h2>
+            <ul class="list-disc pl-6 space-y-2 text-lg">
+                <li>Beginner</li>
+                <li>Intermediate</li>
+                <li>Advanced</li>
+            </ul>
+            <h2 class="text-3xl font-bold mt-8 mb-6">Yoga Styles</h2>
+            <ul class="list-disc pl-6 space-y-2 text-lg">
+                <li>Hatha</li>
+                <li>Sound Healing</li>
+                <li>Kundalini</li>
+                <li>Vinyasa</li>
+                <li>Yin</li>
+                <li>Nidra</li>
+                <li>Therapeutic</li>
+                <li>Alignment</li>
+            </ul>
+        </div>
+        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=900&q=80"
+            alt="Meditation" class="rounded-2xl shadow-md w-full h-[400px] object-cover">
+    </section>
+
+    <!-- Accommodation -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold">Accommodation</h2>
+            <p class="mt-2 text-lg">Check-in: <strong>14:00</strong> | Check-out: <strong>12:00</strong></p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+                alt="Resort" class="rounded-2xl shadow-md w-full h-[350px] object-cover">
+            <div>
+                <h3 class="font-semibold mb-3 text-xl">Facilities:</h3>
+                <div>
+                    <div class="grid sm:grid-cols-2 gap-3 text-lg">
+                        <span>🌿 Spa</span>
+                        <span>🏊 Swimming pool (outdoor)</span>
+                        <span>🛏️ Air-conditioned rooms</span>
+                        <span>☕ Café</span>
+                        <span>🍴 Dining area</span>
+                        <span>♻️ Environmentally friendly</span>
+                        <span>🔥 Fireplace</span>
+                        <span>🍳 Kitchen</span>
+                        <span>🌍 Multilingual staff</span>
+                        <span>🍽️ Restaurant</span>
+                        <span>🚭 Smoke-free property</span>
+                        <span>🌅 Terrace</span>
+                        <span>🧘 Yoga shala</span>
+                        <span>📶 Free Wi-Fi</span>
+                        <span>🧺 Laundry</span>
+                        <span>🧭 Tour assistance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Details -->
+        <!-- <div class="bg-white rounded-2xl shadow-lg p-8 space-y-5 text-lg text-gray-700 leading-relaxed mt-5">
+            <p>
+                You will stay at Yoga Center's deluxe room or luxury or shared villas,
+                nestled just <strong>50 meters from the beach</strong> with stunning mountain views.
+                The property is fully equipped to handle all dining and relaxation needs.
+            </p>
+            <p>
+                The retreat offers a private swimming pool, herbal steam sauna, two yoga halls,
+                and massage & treatment areas.
+            </p>
+            <p>
+                <strong>Deluxe pool view rooms:</strong> Spacious, with a king-size bed,
+                balcony or outside seating, and private bathroom.
+            </p>
+            <p>
+                <strong>Luxury dorm rooms:</strong> Beautiful and comfortable dorms with
+                extra-wide, high-quality single mattresses.
+            </p>
+            <p>
+                <strong>All rooms are equipped with:</strong> Air conditioning, optional colema boards,
+                safe box, Wi-Fi, king-size or twin beds with superior mattresses,
+                personal care products, towels, and bed linen.
+            </p>
+        </div>
+        </div> -->
+    </section>
+
+    <!-- Accommodation Details Section -->
+    <section class="bg-gradient-to-b from-white to-green-50 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <!-- Header -->
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold">Stay With Us</h2>
+                <p class="mt-2 text-gray-600 text-lg">Relax and recharge in comfort surrounded by nature 🌿</p>
+            </div>
+
+            <!-- Content Card -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-10 text-gray-700 leading-relaxed text-lg space-y-6">
+                <p>
+                    You will stay at Yoga Center's deluxe room or luxury or shared room. villas nestled among beautiful
+                    beach (50 meter) with stunning mountain views around. and are fully equipped to handle all of your
+                    dining and relaxation needs. The property maintains a private swimming pool, herbal steam sauna, two
+                    yoga halls, and massage and treatment areas.
+                </p>
+                <p>
+                    The deluxe pool view rooms are spacious, with king size bed, outside seating area or balcony and
+                    they have a private bathroom.
+                    The luxury dorm rooms are the most comfortable and beautiful dorms in, with extra-wide wide very
+                    comfortable single mattresses.
+                </p>
+                <p>
+                    All rooms are equipped with air conditioning, optional colema boards, a safe box, Wi-Fi, king-size
+                    or two single beds with superior mattresses, personal care products, towels, and bd linen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Program Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Program</h2>
+                <p class="mt-4 text-lg max-w-3xl mx-auto text-gray-600">
+                    Yoga schedule includes <strong>Hatha, Vinyasa and Yin styles along with Acro yoga and Therapeutic
+                        yoga</strong>.
+                    The classes are led by experienced international teachers to help you establish
+                    a daily routine of health and wellness or deepen your practice.
+                </p>
+
+            </div>
+
+            <!-- Class Grid -->
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🧘</span>
+                    <p class="mt-2 font-medium">Therapeutic Vinyasa Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🏋️</span>
+                    <p class="mt-2 font-medium">Pilates</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🌊</span>
+                    <p class="mt-2 font-medium">Vinyasa Flow Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🔥</span>
+                    <p class="mt-2 font-medium">Dynamic Hatha Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🌀</span>
+                    <p class="mt-2 font-medium">Ashtanga Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🕉️</span>
+                    <p class="mt-2 font-medium">Meditation</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🤸</span>
+                    <p class="mt-2 font-medium">Acro Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">✨</span>
+                    <p class="mt-2 font-medium">Kundalini Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🌙</span>
+                    <p class="mt-2 font-medium">Yin Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">💨</span>
+                    <p class="mt-2 font-medium">Conscious Breathing</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">📏</span>
+                    <p class="mt-2 font-medium">Hatha Alignment Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🪂</span>
+                    <p class="mt-2 font-medium">Aerial Yoga</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">⚡</span>
+                    <p class="mt-2 font-medium">Chi Kung</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">💠</span>
+                    <p class="mt-2 font-medium">TRE - Trauma Release Exercise</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">📖</span>
+                    <p class="mt-2 font-medium">Yoga Philosophy Lectures</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🌿</span>
+                    <p class="mt-2 font-medium">Ayurveda Lectures</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🌀</span>
+                    <p class="mt-2 font-medium">Inner Dance</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🔥</span>
+                    <p class="mt-2 font-medium">Fire Gathering</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">💃</span>
+                    <p class="mt-2 font-medium">Dance Therapy</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🌬️</span>
+                    <p class="mt-2 font-medium">Rebirthing Sessions</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🥗</span>
+                    <p class="mt-2 font-medium">Nutrition Lectures</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🎶</span>
+                    <p class="mt-2 font-medium">Kirtan Gatherings</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🪘</span>
+                    <p class="mt-2 font-medium">Shamanic Journeys</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition"><span class="text-2xl">🎵</span>
+                    <p class="mt-2 font-medium">Sound Healing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program -->
+    <!-- Daily Schedule Section -->
+    <!-- Sample Daily Schedule Section -->
+    <!-- Sample Daily Schedule Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Sample Daily Schedule</h2>
+                <p class="mt-3 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Each day at the retreat balances yoga, meditation, nourishing meals, and free time
+                    for relaxation, treatments, and exploring the beauty of Phuket.
+                </p>
+            </div>
+
+            <!-- Grid: Timeline + Image -->
+            <div class="grid md:grid-cols-2 gap-10 items-stretch">
+
+                <!-- Timeline -->
+                <div class="relative border-l-4 border-green-600 pl-6 h-[650px] overflow-y-auto pr-4 scrollbar-hide">
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">07:00</h3>
+                        <p class="text-gray-700">🌅 Morning meditation</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">08:00</h3>
+                        <p class="text-gray-700">🧘 Yoga class - Hatha, Vinyasa, Dynamic, and other yoga class</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">09:00</h3>
+                        <p class="text-gray-700">🍽️ Vegan/non veg breakfast buffet</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">10:30</h3>
+                        <p class="text-gray-700">
+                            🏞️ Hatha, Vinyasa, Dynamic, and other yoga classes, or free time for personal excursions to
+                            the local waterfall and an abundance of beautiful local beaches
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">12:00</h3>
+                        <p class="text-gray-700">🥗 Vegan/non veg lunch buffet</p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">13:00</h3>
+                        <p class="text-gray-700">💆 Free time for personal excursions, massage treatments, and healing
+                            sessions
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">14:30</h3>
+                        <p class="text-gray-700">🧘 Guided meditation class and alignment yoga
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">16:30</h3>
+                        <p class="text-gray-700">🌙 Hatha or Yin yoga class
+
+                        </p>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold">18:00</h3>
+                        <p class="text-gray-700">🍛 Vegan/non veg dinner buffet
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold">20:00</h3>
+                        <p class="text-gray-700">
+                            🎶 Evening activity (Kirtan, song circle around the fire, inner dance, yoga philosophy
+                            lectures, Ayurveda lectures)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Daily Yoga Retreat Schedule" class="rounded-2xl shadow-lg w-full h-[650px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom CSS to hide scrollbar -->
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    </style>
+
+
+    <!-- Pricing -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-6 text-center">Pricing</h2>
+        <div class="overflow-x-auto">
+            <table class="table-auto w-full border-collapse border border-gray-300 text-lg">
+                <thead class="bg-green-100">
+                    <tr>
+                        <th class="border border-gray-300 px-4 py-2">No of Person</th>
+                        <th class="border border-gray-300 px-4 py-2">Room</th>
+                        <th class="border border-gray-300 px-4 py-2">Days</th>
+                        <th class="border border-gray-300 px-4 py-2">Price (THB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-50">
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">Shared room (2 pax)</td>
+                        <td class="border px-4 py-2">3D/2N</td>
+                        <td class="border px-4 py-2">5000/pax</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">Deluxe Private room</td>
+                        <td class="border px-4 py-2">3D/2N</td>
+                        <td class="border px-4 py-2">7000/pax</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="border px-4 py-2">2</td>
+                        <td class="border px-4 py-2">Private Double room</td>
+                        <td class="border px-4 py-2">3D/2N</td>
+                        <td class="border px-4 py-2">13000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+
+</body>
+
+</html>
