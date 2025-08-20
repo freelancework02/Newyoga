@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+      <header class="header" id="topNav">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="https://aadiyogacenterphuket.com/assets/demologo-wsvi2NRq.webp" alt="Yoga Center Logo">
+        <span class="logo-text">Aadi Yoga Center</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-controls="mainNav"
+        aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="mainNav">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./retreat.html">Retreats</a></li>
+        <li><a href="./about.html">About </a></li>
+        <li><a href="./Gallery.html">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="cta-button">Book Now</a>
+    </div>
+  </header>
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery" style="margin-top: 4rem;">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Beautiful Space</h2>
+          <p class="section-subtitle">Take a glimpse into our serene studio spaces, designed to create the perfect
+            atmosphere for your yoga journey.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://aadiyogacenterphuket.com/assets/yogaclass-Bmr-4IYm.webp" alt="Main yoga studio">
+            <div class="gallery-overlay">Main Studio</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://aadiyogacenterphuket.com/assets/image-12-Cf8MWwme.webp" alt="Hot yoga room">
+            <div class="gallery-overlay">Sound Healing Room</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://aadiyogacenterphuket.com/assets/aboutus-CT4BZr0P.webp" alt="Meditation hall">
+            <div class="gallery-overlay">Meditation Hall</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://aadiyogacenterphuket.com/assets/Therapeutic-C1r5Vh1U.webp" alt="Therapeutic yoga space">
+            <div class="gallery-overlay">Therapeutic Space</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://aadiyogacenterphuket.com/assets/pillates-01ZRYket.webp" alt="Pilates studio">
+            <div class="gallery-overlay">Pilates Studio</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://aadiyogacenterphuket.com/assets/kidsyoga1-69NGMkKe.webp" alt="Kids yoga area">
+            <div class="gallery-overlay">Kids Yoga Area</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://aadiyogacenterphuket.com/assets/yogath1-akyray7u.webp" alt="Kids yoga area">
+            <div class="gallery-overlay">therapy yoga</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://aadiyogacenterphuket.com/assets/yogacls1-DMcQgiag.webp" alt="Kids yoga area">
+            <div class="gallery-overlay">Training Courses</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Ready to begin your yoga journey? Contact us today to learn more about our classes
+            or to schedule your first visit.</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Visit Our Studio</h3>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-details">
+                <h4>Address</h4>
+                <p>123 Wellness Street<br>Patong, Phuket 83150<br>Thailand</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>+66 (0) 76-123-4567<br>+66 (0) 89-456-7890</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>info@aadiyogacenterphuket.com<br>bookings@aadiyogacenterphuket.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-details">
+                <h4>Studio Hours</h4>
+                <p>Mon-Fri: 6:00 AM - 9:00 PM<br>Sat-Sun: 7:00 AM - 8:00 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form name="submit-to-google-sheet">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                  placeholder="Tell us about your yoga experience and what you're looking for..." required></textarea>
+              </div>
+              <span id="msg"></span>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

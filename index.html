@@ -15,87 +15,101 @@
     content="At Aadi Yoga Center in Phuket, we offer yoga, meditation, therapeutic practices, and workshops designed to help you find balance and harmony." />
   <meta property="og:image" content="https://aadiyogacenterphuket.com/assets/demologo-wsvi2NRq.webp" />
   <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <!-- Fonts & Icons -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@500;700&family=Dancing+Script:wght@600&display=swap"
     rel="stylesheet">
+    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="shortcut icon" href="https://aadiyogacenterphuket.com/assets/demologo-wsvi2NRq.webp" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <!-- <style>
 </style> -->
 
-<!-- Responsive styles -->
-<style>
+  <!-- Responsive styles -->
+  <style>
+    :root {
+      --primary-color: #2c5530;
+      --secondary-color: #f8f9fa;
+      --accent-color: #f4a261;
+      --gold-color: #d4af37;
+      --text-dark: #2c3e50;
+      --text-light: #7f8c8d;
+      --background-light: #f8f9fa;
+      --white: #fff;
+      --gradient: linear-gradient(135deg, #2c5530 0%, #7fb069 100%);
+      --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f4a261 100%);
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
 
-  :root {
-  --primary-color: #2c5530;
-  --secondary-color: #f8f9fa;
-  --accent-color: #f4a261;
-  --gold-color: #d4af37;
-  --text-dark: #2c3e50;
-  --text-light: #7f8c8d;
-  --background-light: #f8f9fa;
-  --white: #fff;
-  --gradient: linear-gradient(135deg, #2c5530 0%, #7fb069 100%);
-  --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f4a261 100%);
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
+    @media (min-width: 950px) {
+      .about-parent {
+        flex-direction: row !important;
+        min-height: 500px !important;
+      }
 
-@media (min-width: 950px) {
-  .about-parent {
-    flex-direction: row !important;
-    min-height: 500px !important;
-  }
-  .about-image-section, .about-text-section {
-    width: 50% !important;
-    min-height: 500px !important;
-  }
-  .about-image-section {
-    padding: 0 !important;
-    justify-content: flex-end !important;
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .about-text-section {
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 3rem 2.5rem !important;
-  }
-}
-@media (max-width: 780px) {
-  .about-parent {
-    min-height: 300px !important;
-  }
-  .about-text-section {
-    padding: 1rem !important;
-  }
-  .about-image-section img {
-    max-width:100%;
-    margin: 1.2rem 0;
-  }
-}
-@media (max-width: 500px) {
-  .about-parent {
-    min-height: 100px !important;
-  }
-  .about-text-section {
-    padding: 1rem 0.2rem !important;
-  }
-  .about-btn {
-    padding:0.65rem 1.4rem !important;
-    font-size:0.92rem !important;
-  }
-  #about-founder h2 {
-    font-size:1.25rem !important;
-  }
-}
-</style>
+      .about-image-section,
+      .about-text-section {
+        width: 50% !important;
+        min-height: 500px !important;
+      }
+
+      .about-image-section {
+        padding: 0 !important;
+        justify-content: flex-end !important;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .about-text-section {
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 3rem 2.5rem !important;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .about-parent {
+        min-height: 300px !important;
+      }
+
+      .about-text-section {
+        padding: 1rem !important;
+      }
+
+      .about-image-section img {
+        max-width: 100%;
+        margin: 1.2rem 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .about-parent {
+        min-height: 100px !important;
+      }
+
+      .about-text-section {
+        padding: 1rem 0.2rem !important;
+      }
+
+      .about-btn {
+        padding: 0.65rem 1.4rem !important;
+        font-size: 0.92rem !important;
+      }
+
+      #about-founder h2 {
+        font-size: 1.25rem !important;
+      }
+    }
+  </style>
 
 </head>
 
@@ -112,10 +126,10 @@
       </button>
       <ul class="nav-menu" id="mainNav">
         <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">Yoga TTC</a></li>
+        <li><a href="./services.html">Services</a></li>
         <li><a href="./retreat.html">Retreats</a></li>
         <li><a href="./about.html">About </a></li>
-        <li><a href="https://aadiyogacenterphuket.com/aboutus/gallery">Gallery</a></li>
+        <li><a href="./Gallery.html">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="#contact" class="cta-button">Book Now</a>
@@ -129,35 +143,69 @@
         of self-discovery and holistic healing.</p>
       <div class="hero-buttons">
         <a href="#classes" class="btn-primary">Explore Classes</a>
-        <a href="#about" class="btn-secondary">Learn More</a>
+        <a href="#aboutyogacenter" class="btn-secondary">Learn More</a>
       </div>
     </section>
     <!-- Stats Section -->
     <!-- Stats Section -->
-    <section class="stats">
-      <div class="stats-container">
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fas fa-users"></i></div>
-          <h3>500+</h3>
-          <p>Happy Students</p>
+<section class="stats" class="py-12 bg-gradient-to-r from-orange-50 to-yellow-50">
+  <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+      <!-- 100 Hour -->
+      <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="flex justify-center mb-4">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full text-white text-2xl"
+               style="background: var(--gradient);">
+            <i class="fas fa-hourglass-start"></i>
+          </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
-          <h3>50+</h3>
-          <p>Weekly Classes</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-          <h3>8</h3>
-          <p>Expert Instructors</p>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon"><i class="fas fa-award"></i></div>
-          <h3>5</h3>
-          <p>Years Experience</p>
-        </div>
+        <h3 class="text-2xl font-bold text-gray-800">100+</h3>
+        <p class="text-gray-600">Hour Yoga Teacher Training</p>
       </div>
-    </section>
+
+      <!-- 200 Hour -->
+      <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="flex justify-center mb-4">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full text-white text-2xl"
+               style="background: var(--gradient);">
+            <i class="fas fa-certificate"></i>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">200+</h3>
+        <p class="text-gray-600">Hour Yoga TTC (Yoga Alliance Certified)</p>
+      </div>
+
+      <!-- 300 Hour -->
+      <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="flex justify-center mb-4">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full text-white text-2xl"
+               style="background: var(--gradient);">
+            <i class="fas fa-book-open"></i>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">300+</h3>
+        <p class="text-gray-600">Hour Advanced Yoga Training</p>
+      </div>
+
+      <!-- 500 Hour -->
+      <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="flex justify-center mb-4">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full text-white text-2xl"
+               style="background: var(--gradient);">
+            <i class="fas fa-award"></i>
+          </div>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">500+</h3>
+        <p class="text-gray-600">Hour Complete Yoga Teacher Training</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- About Section -->
     <!-- <section class="about" id="about">
@@ -192,47 +240,146 @@
       </div>
     </section> -->
 
-<section id="about-founder" style="padding: 0; margin: 3rem auto; max-width: 1200px; border-radius: 1.5rem; box-shadow: var(--shadow); overflow: hidden; background: var(--white);">
-  <div class="about-parent" style="display: flex; flex-direction: column; width: 100%; min-height: 500px;">
-    
-    <!-- Image Section -->
-    <div class="about-image-section" style="flex:1; width:100%; min-height: 300px; position:relative; background: var(--white); display:flex; align-items:center; justify-content:center;">
-      <img src="https://aadiyogacenterphuket.com/assets/deepaksir-CCns89iX.jpg" alt="Master Deepak in meditation" style="width:100%; max-width:540px; height:auto; box-shadow: var(--shadow); border-radius:1.3rem; margin: 2rem 0; object-fit:cover;" />
-    </div>
-    
-    <!-- Text Section -->
-    <div class="about-text-section" style="flex:1; width:100%; background: var(--white); padding: 2.5rem 1.5rem; display:flex; align-items:center; justify-content:center;">
-      <div style="max-width:700px;">
-        
-        <h2 style="font-family: 'Playfair Display', serif; font-size:2rem; font-weight:700; text-align:center; margin-bottom:1.5rem; color: var(--text-dark);">
-          Master Deepak / The Founder
-        </h2>
-        
-        <p style="font-family:'Poppins',sans-serif; font-size:1.12rem; color:var(--text-dark); margin-bottom:1rem; line-height:1.8;">
-          Master Deepak’s journey is a remarkable blend of ancient tradition and modern scholarship. Born in the sacred city of Rishikesh, in the Himalayas, India, he hails from a venerable priestly family renowned for its profound dedication to Sanskrit and yoga. For eight generations, his family has been custodians of yoga teachings and Sanskrit scholarship, preserving a legacy that Master Deepak now carries forward with pride and devotion.
-        </p>
+    <!-- About yoga center  -->
+  <section id="aboutyogacenter"  class="relative py-12 px-6 md:px-16 lg:px-24" style="background: var(--background-light);">
+  <div class="max-w-6xl mx-auto text-center">
+    <!-- Heading -->
+    <h1 style="font-size:2rem; font-weight:700; color: var(--primary-color); font-family: 'Playfair Display', serif;" class="md:text-5xl leading-tight mb-4">
+      Aadiyoga Center Phuket – Authentic Indian Yoga & Wellness in Patong
+    </h1>
+    <p style="font-size:1.25rem; color: var(--text-dark); font-weight:500; margin-bottom:1.5rem; font-family: 'Poppins',sans-serif;">
+      The First <span style="font-weight:600; color: var(--accent-color);">Indian Yogi-led Yoga & Wellness School</span> in Patong,
+      Phuket<br />
+      <span style="font-style:italic; color: var(--primary-color);">Yoga Alliance USA Certified School of Yoga in Patong Phuket</span>
+    </p>
 
-        <p style="font-family:'Poppins',sans-serif; font-size:1.12rem; color:var(--text-dark); margin-bottom:1rem; line-height:1.8;">
-          From an early age, Deepak was immersed in the spiritual and intellectual heritage of his ancestors. His guru, Mahamandaleshwar Dr. Rameshwar Das, a revered spiritual leader and head of ashrams and saints across India, guided him with wisdom and grace. Dr. Rameshwar Das is also the chief of the Manokamna Siddh Hanuman Mandir, famously known as Bada Hanuman Mandir, located at the sacred Triveni Ghat in Rishikesh. Under such profound mentorship, Deepak deepened his understanding of authentic yoga and spiritual practice.
-        </p>
+    <!-- Introduction -->
+    <p style="color: var(--text-light); max-width:700px; margin:0 auto 2rem; font-family: 'Poppins',sans-serif;">
+      Welcome to <span style="font-weight:600; color:var(--primary-color);">Aadiyoga Center</span>, the first Indian yogi-based yoga & wellness
+      school in Patong, Phuket. Guided by the wisdom of <span style="font-weight:600; color: var(--accent-color);">Deepak Yogi</span>,
+      our center is devoted to preserving the <em>Pramāra</em> — the true essence of Indian yogic tradition — bringing
+      ancient teachings into modern life.
+    </p>
 
-        <p style="font-family:'Poppins',sans-serif; font-size:1.12rem; color:var(--text-dark); margin-bottom:1rem; line-height:1.8;">
-          Despite his rich spiritual background, Master Deepak pursued academic excellence in the modern world, earning many master’s degrees in Yoga, Linguistics, Physics, and International Relations and becoming a linguist in Chinese. He spent many years working in office jobs, gaining valuable life experience and a broader perspective. However, the call of his ancestral roots and his passion for yoga eventually led him to fully embrace the yogic path.
-        </p>
+    <p style="color: var(--text-light); max-width:700px; margin:0 auto 2rem; font-family: 'Poppins',sans-serif;">
+      If you are seeking the <span style="font-weight:600; color:var(--primary-color);">best yoga teacher training in Phuket</span> that carries
+      the heart of India, then you are in the right place. At Aadiyoga Center, we blend <span style="font-weight:600; color:var(--primary-color);">Ashtanga Yoga, Hatha Yoga, and Vinyasa Flow (multi-style yoga)</span> in their authentic form, empowering you to live a holistic,
+      balanced, and blissful lifestyle.
+    </p>
 
-        <p style="font-family:'Poppins',sans-serif; font-size:1.12rem; color:var(--text-dark); margin-bottom:1rem; line-height:1.8;">
-          Today, Master Deepak is dedicated to spreading authentic yoga, combining his profound traditional knowledge with his worldly insights. His mission is to share the timeless wisdom of yoga and Sanskrit, enriching the lives of those who seek balance, health, and spiritual growth. Through his teachings, the ancient legacy of his family continues to inspire and transform lives in the modern world.
-        </p>
-
-        <div style="display:flex; justify-content:center; margin-top:2.5rem;">
-          <a href="about.html" class="cta-button" style="padding:0.75rem 2rem;   font-size:1rem; font-family:'Poppins',sans-serif; font-weight:600; text-decoration:none; box-shadow: var(--shadow); transition: all 0.3s ease;">
-            About Founder
-          </a>
-        </div>
+    <!-- Courses Offered -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <div style="background: var(--white); box-shadow: var(--shadow); border-radius: 1.2rem; padding:1.5rem;" class="hover:shadow-lg transition">
+        <h3 style="font-size:1.25rem; font-weight:700; color: var(--accent-color); margin-bottom:.6rem; font-family: 'Poppins',sans-serif;">100-Hour Yoga Teacher Training</h3>
+        <p style="color:var(--text-light); font-size:0.98rem;">Foundational course to begin your yoga journey.</p>
+      </div>
+      <div style="background: var(--white); box-shadow: var(--shadow); border-radius: 1.2rem; padding:1.5rem;" class="hover:shadow-lg transition">
+        <h3 style="font-size:1.25rem; font-weight:700; color: var(--accent-color); margin-bottom:.6rem; font-family: 'Poppins',sans-serif;">200-Hour Yoga Teacher Training</h3>
+        <p style="color:var(--text-light); font-size:0.98rem;">Yoga Alliance Certified program for aspiring teachers.</p>
+      </div>
+      <div style="background: var(--white); box-shadow: var(--shadow); border-radius: 1.2rem; padding:1.5rem;" class="hover:shadow-lg transition">
+        <h3 style="font-size:1.25rem; font-weight:700; color: var(--accent-color); margin-bottom:.6rem; font-family: 'Poppins',sans-serif;">300-Hour Advanced Yoga Training</h3>
+        <p style="color:var(--text-light); font-size:0.98rem;">Deepen your practice with advanced yoga training.</p>
+      </div>
+      <div style="background: var(--white); box-shadow: var(--shadow); border-radius: 1.2rem; padding:1.5rem;" class="hover:shadow-lg transition">
+        <h3 style="font-size:1.25rem; font-weight:700; color: var(--accent-color); margin-bottom:.6rem; font-family: 'Poppins',sans-serif;">500-Hour Complete Yoga Teacher Training</h3>
+        <p style="color:var(--text-light); font-size:0.98rem;">A complete path to mastery and transformation.</p>
       </div>
     </div>
+
+    <!-- Closing Note -->
+    <p style="color: var(--text-dark); max-width:600px; margin:0 auto 2rem; font-family: 'Poppins',sans-serif;">
+      Our small batch size (25–30 students) ensures that every participant receives personal guidance in both
+      practice and philosophy. From breathwork to meditation, from body alignment to yogic lifestyle, you will
+      experience yoga as it was truly meant to be.
+    </p>
+
+    <p style="color: var(--text-dark); max-width:600px; margin:0 auto 2rem; font-family: 'Poppins',sans-serif;">
+      At Aadiyoga, we believe yoga is not just exercise — it is a <span style="font-weight:600; color: var(--accent-color);">journey to self-realization, wellness, and everlasting bliss</span>.
+    </p>
+
+    <!-- Call to Action -->
+    <a href="#contact"
+      style="display:inline-block; background: var(--accent-color); color: #fff; padding: 0.85rem 2rem; border-radius: 2rem; font-size:1.18rem; font-family:'Poppins',sans-serif; font-weight:600; box-shadow: var(--shadow); transition: background 0.3s;"
+      onmouseover="this.style.background='var(--gold-color)';"
+      onmouseout="this.style.background='var(--accent-color)';"
+      >
+      Book Your Seat Now
+    </a>
   </div>
 </section>
+
+
+
+
+    <!-- About founder  -->
+    <section id="about-founder"
+      style="padding: 0; margin: 3rem auto; max-width: 1200px; border-radius: 1.5rem; box-shadow: var(--shadow); overflow: hidden; background: var(--white);">
+      <div class="about-parent" style="display: flex; flex-direction: column; width: 100%; min-height: 500px;">
+
+        <!-- Image Section -->
+        <div class="about-image-section"
+          style="flex:1; width:100%; min-height: 300px; position:relative; background: var(--white); display:flex; align-items:center; justify-content:center;">
+          <img src="https://aadiyogacenterphuket.com/assets/deepaksir-CCns89iX.jpg" alt="Master Deepak in meditation"
+            style="width:100%; max-width:540px; height:auto; box-shadow: var(--shadow); border-radius:1.3rem; margin: 2rem 0; object-fit:cover;" />
+        </div>
+
+        <!-- Text Section -->
+        <div class="about-text-section"
+          style="flex:1; width:100%; background: var(--white); padding: 2.5rem 1.5rem; display:flex; align-items:center; justify-content:center;">
+          <div style="max-width:700px;">
+
+            <h2
+              style="font-family: 'Playfair Display', serif; font-size:2rem; font-weight:700; text-align:center; margin-bottom:1.5rem; color: var(--text-dark);">
+              Master Deepak / The Founder
+            </h2>
+
+            <p
+              style="font-family:'Poppins',sans-serif; font-size:1.12rem; color:var(--text-dark); margin-bottom:1rem; line-height:1.8;">
+              Master Deepak’s journey is a remarkable blend of ancient tradition and modern scholarship. Born in the
+              sacred city of Rishikesh, in the Himalayas, India, he hails from a venerable priestly family renowned for
+              its profound dedication to Sanskrit and yoga. For eight generations, his family has been custodians of
+              yoga teachings and Sanskrit scholarship, preserving a legacy that Master Deepak now carries forward with
+              pride and devotion.
+            </p>
+
+            <p
+              style="font-family:'Poppins',sans-serif; font-size:1.12rem; color:var(--text-dark); margin-bottom:1rem; line-height:1.8;">
+              From an early age, Deepak was immersed in the spiritual and intellectual heritage of his ancestors. His
+              guru, Mahamandaleshwar Dr. Rameshwar Das, a revered spiritual leader and head of ashrams and saints across
+              India, guided him with wisdom and grace. Dr. Rameshwar Das is also the chief of the Manokamna Siddh
+              Hanuman Mandir, famously known as Bada Hanuman Mandir, located at the sacred Triveni Ghat in Rishikesh.
+              Under such profound mentorship, Deepak deepened his understanding of authentic yoga and spiritual
+              practice.
+            </p>
+
+            <p
+              style="font-family:'Poppins',sans-serif; font-size:1.12rem; color:var(--text-dark); margin-bottom:1rem; line-height:1.8;">
+              Despite his rich spiritual background, Master Deepak pursued academic excellence in the modern world,
+              earning many master’s degrees in Yoga, Linguistics, Physics, and International Relations and becoming a
+              linguist in Chinese. He spent many years working in office jobs, gaining valuable life experience and a
+              broader perspective. However, the call of his ancestral roots and his passion for yoga eventually led him
+              to fully embrace the yogic path.
+            </p>
+
+            <p
+              style="font-family:'Poppins',sans-serif; font-size:1.12rem; color:var(--text-dark); margin-bottom:1rem; line-height:1.8;">
+              Today, Master Deepak is dedicated to spreading authentic yoga, combining his profound traditional
+              knowledge with his worldly insights. His mission is to share the timeless wisdom of yoga and Sanskrit,
+              enriching the lives of those who seek balance, health, and spiritual growth. Through his teachings, the
+              ancient legacy of his family continues to inspire and transform lives in the modern world.
+            </p>
+
+            <div style="display:flex; justify-content:center; margin-top:2.5rem;">
+              <a href="about.html" class="cta-button"
+                style="padding:0.75rem 2rem;   font-size:1rem; font-family:'Poppins',sans-serif; font-weight:600; text-decoration:none; box-shadow: var(--shadow); transition: all 0.3s ease;">
+                About Founder
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -282,7 +429,7 @@
 
       <div class="service-card">
         <div class="service-image">
-          <img src="https://aadiyogacenterphuket.com/assets/yogaclass-Bmr-4IYm.webp" alt="Meditation Session">
+          <img src="https://aadiyogacenterphuket.com/assets/yogacls1-DMcQgiag.webp" alt="Meditation Session">
         </div>
         <h3>Meditation &amp; Mindfulness</h3>
         <p>Deep meditation sessions and mindfulness practices to cultivate inner peace, mental clarity, emotional
@@ -314,13 +461,25 @@
       </div>
 
     </div>
+
+    <!-- Responsive Button: Explore Our Classes -->
+    <div class="w-full flex justify-center mt-6">
+      <a
+        href="./services.html"
+        class="cta-button"
+       
+      >
+        Explore Our Classes
+      </a>
+    </div>
   </div>
 </section>
 
 
 
+
     <!-- Instructors Section -->
-    <section class="instructors" id="instructors">
+    <!-- <section class="instructors" id="instructors">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Meet Our Expert Instructors</h2>
@@ -378,61 +537,67 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- Testimonials Section -->
-   <section class="testimonials" id="testimonials">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">What Our Students Say</h2>
-      <p class="section-subtitle">Real experiences from our students who found growth, balance, and transformation at Aadi Yoga Center.</p>
-    </div>
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What Our Students Say</h2>
+          <p class="section-subtitle">Real experiences from our students who found growth, balance, and transformation
+            at Aadi Yoga Center.</p>
+        </div>
 
-    <div class="testimonial-grid">
+        <div class="testimonial-grid">
 
-      <div class="testimonial-card">
-        <p class="testimonial-text">
-          Joining Aadi Yoga Center has been one of the best decisions of my life. The classes are well-structured and supportive, and I feel stronger both physically and mentally every single day. The community here is truly uplifting.
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">SM</div>
-          <div class="author-info">
-            <h4>Sophia Martin</h4>
-            <p>Student for 1 year</p>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              Joining Aadi Yoga Center has been one of the best decisions of my life. The classes are well-structured
+              and supportive, and I feel stronger both physically and mentally every single day. The community here is
+              truly uplifting.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-info">
+                <h4>Sophia Martin</h4>
+                <p>Student for 1 year</p>
+              </div>
+            </div>
           </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              Practicing under Master Deepak has been a life-changing experience. His way of blending traditional yoga
+              wisdom with practical teachings makes every class powerful and meaningful. I’ve learned not just yoga, but
+              a better way to live.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div class="author-info">
+                <h4>Rahul Khanna</h4>
+                <p>sound healing </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              I came here seeking stress relief, and I left with so much more—inner peace, self-awareness, and a
+              supportive yoga family. The meditation and mindfulness sessions gave me tools I’ll carry for life.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">LD</div>
+              <div class="author-info">
+                <h4>Laura Davis</h4>
+                <p>Meditation & Mindfulness Student</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <div class="testimonial-card">
-        <p class="testimonial-text">
-          Practicing under Master Deepak has been a life-changing experience. His way of blending traditional yoga wisdom with practical teachings makes every class powerful and meaningful. I’ve learned not just yoga, but a better way to live.
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">RK</div>
-          <div class="author-info">
-            <h4>Rahul Khanna</h4>
-            <p>sound healing </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <p class="testimonial-text">
-          I came here seeking stress relief, and I left with so much more—inner peace, self-awareness, and a supportive yoga family. The meditation and mindfulness sessions gave me tools I’ll carry for life.
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">LD</div>
-          <div class="author-info">
-            <h4>Laura Davis</h4>
-            <p>Meditation & Mindfulness Student</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
@@ -491,8 +656,8 @@
         </div>
       </div>
     </section> -->
-    
-    
+
+
     <!-- Gallery Section -->
     <section class="gallery" id="gallery">
       <div class="container">
@@ -537,6 +702,7 @@
         </div>
       </div>
     </section>
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <div class="container">
@@ -606,60 +772,76 @@
     </section>
   </main>
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Aadi Yoga Center</h3>
-          <p>Transform your life through the ancient practice of yoga. Discover the path to wellness, balance, and inner
-            peace in Phuket.</p>
-          <div style="display:flex; gap:0.7rem; margin-top:1rem;">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-line"></i></a>
-          </div>
-        </div>
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#classes">Classes & Services</a></li>
-            <li><a href="#instructors">Our Instructors</a></li>
-            <li><a href="#pricing">Pricing & Packages</a></li>
-            <li><a href="#gallery">Studio Gallery</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Class Schedule</h3>
-          <ul>
-            <li><a href="#">Morning Classes (6-9 AM)</a></li>
-            <li><a href="#">Lunch Break Sessions (12-2 PM)</a></li>
-            <li><a href="#">Evening Classes (6-8 PM)</a></li>
-            <li><a href="#">Weekend Workshops</a></li>
-            <li><a href="#">Private Sessions</a></li>
-            <li><a href="#">Online Classes</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Resources</h3>
-          <ul>
-            <li><a href="#">Yoga for Beginners</a></li>
-            <li><a href="#">Meditation Guide</a></li>
-            <li><a href="#">Nutrition Tips</a></li>
-            <li><a href="#">Teacher Training</a></li>
-            <li><a href="#">Retreat Programs</a></li>
-            <li><a href="#">Wellness Blog</a></li>
-          </ul>
+  <footer class="bg-[#2c5530] text-gray-200 py-10">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-8">
+
+      <!-- About Section -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+          Aadi Yoga Center Phuket
+        </h3>
+        <p class="text-yellow-200">
+          Discover tranquility at Aadi Yoga Center in Thailand. From yoga classes to therapy and sound healing, find your path to wellness with us.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+          Services
+        </h3>
+        <ul class="space-y-2 font-medium" style="font-family: 'Poppins', sans-serif;">
+          <li><a href="./services.html" class="hover:text-yellow-300 transition-colors">Yoga Classes (Private & Group)</a></li>
+          <li><a href="./services.html" class="hover:text-yellow-300 transition-colors">Yoga Therapy</a></li>
+          <li><a href="./services.html" class="hover:text-yellow-300 transition-colors">Kids Yoga</a></li>
+          <li><a href="./services.html" class="hover:text-yellow-300 transition-colors">Training Courses</a></li>
+          <li><a href="./services.html" class="hover:text-yellow-300 transition-colors">Sound Healing</a></li>
+        </ul>
+        <div class="mt-4">
+          <h4 class="font-semibold text-yellow-300" style="font-family: 'Poppins', sans-serif;">⏰ Opening Hours</h4>
+          <p class="text-yellow-200 font-medium" style="font-family: 'Poppins', sans-serif;">Mon-Sun: 05:30 AM – 09:00 PM</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Aadi Yoga Center Phuket. All rights reserved. | Privacy Policy | Terms of Service | Designed with
-          ❤️ for wellness</p>
+
+      <!-- Policies -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+          Policies
+        </h3>
+        <ul class="space-y-2 font-medium" style="font-family: 'Poppins', sans-serif;">
+          <li><a href="#" class="hover:text-yellow-300 transition-colors">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:text-yellow-300 transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-yellow-300 transition-colors">Refund Policy</a></li>
+        </ul>
       </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+          Get in Touch
+        </h3>
+        <p class="text-yellow-200 font-medium" style="font-family: 'Poppins', sans-serif;">
+          80, Doctor Wattana, 16 Soi Dr. Watthana,<br>
+          Pa Tong, Phuket, 83150, Thailand
+        </p>
+        <p class="mt-3 font-medium" style="font-family: 'Poppins', sans-serif;"><strong>Phone:</strong> <a href="tel:+66802511273" class="hover:text-yellow-300 transition-colors">+66 80 251 1273</a></p>
+        <p class="font-medium" style="font-family: 'Poppins', sans-serif;"><strong>Email:</strong> <a href="mailto:info@aadiyogacenterphuket.com" class="hover:text-yellow-300 transition-colors">info@aadiyogacenterphuket.com</a></p>
+      </div>
+
     </div>
-  </footer>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-yellow-700 pt-6 text-center text-yellow-300 text-sm font-medium" style="font-family: 'Poppins', sans-serif;">
+      <p>
+        © 2025 <a href="https://aadiyogacenterphuket.com" class="hover:text-white transition-colors">aadiyogacenterphuket.com</a>. All Rights Reserved. 
+        | Designed & Developed by <span class="text-yellow-400 font-semibold">Aawesh Manyar</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
   <script src="scripts.js"></script>
   <!-- <script>
     
