@@ -63,3 +63,55 @@ document.querySelector('.contact-form form').addEventListener('submit', function
 });
 
 
+
+const reviews = [
+  { name: "Priyanka Gawande", image: "https://randomuser.me/api/portraits/women/44.jpg", date: "2 months ago", text: "As I completed my 500 hours YTTC program it was a wonderful experience with the school and the ambience what I felt personally." },
+  { name: "Rahul Khanna", image: "https://randomuser.me/api/portraits/men/23.jpg", date: "1 month ago", text: "Transformative yoga classes in a peaceful atmosphere. Deepak is a fantastic teacher." },
+  { name: "Laura Davis", image: "https://randomuser.me/api/portraits/women/92.jpg", date: "3 weeks ago", text: "The meditation and mindfulness sessions gave me tools I’ll carry for life." },
+  { name: "Sophia Martin", image: "https://randomuser.me/api/portraits/women/39.jpg", date: "1 week ago", text: "Joining Aadi Yoga Center has been one of the best decisions of my life. The classes are well-structured and supportive." },
+  { name: "Marcus Chen", image: "https://randomuser.me/api/portraits/men/56.jpg", date: "4 weeks ago", text: "Highly recommended! The instructors are knowledgeable and caring." },
+  { name: "Priya Sharma", image: "https://randomuser.me/api/portraits/women/28.jpg", date: "1 month ago", text: "A truly transformative experience. I learned so much about yoga and wellness." },
+  { name: "Michael Lee", image: "https://randomuser.me/api/portraits/men/30.jpg", date: "2 months ago", text: "Excellent facilities and warm community. Perfect for all skill levels." },
+  { name: "Emma Wilson", image: "https://randomuser.me/api/portraits/women/15.jpg", date: "3 months ago", text: "The yoga therapy sessions helped me heal and regain strength." },
+  // Add more up to 20 reviews as needed...
+];
+
+let current = 0;
+
+const starSVG = `<svg fill="currentColor" viewBox="0 0 20 20" class="h-6 w-6 text-[#d4af37] mr-1"><polygon points="9.9,1.1 7.1,6.6 1.2,7.4 5.6,11.5 4.5,17.3 9.9,14.3 15.2,17.3 14.1,11.5 18.4,7.4 12.7,6.6"/></svg>`;
+
+function showReview(index) {
+  const r = reviews[index];
+  document.getElementById('carousel-slides').innerHTML = `
+    <div class="flex items-center mb-4">
+      <img src="${r.image}" alt="Reviewer" class="h-14 w-14 rounded-full border-4 border-[#f4a261] mr-4 object-cover shadow-md" />
+      <div>
+        <h4 class="text-xl font-semibold text-[#2c5530]">${r.name}</h4>
+        <p class="text-xs text-[#7f8c8d]">${r.date}</p>
+      </div>
+    </div>
+    <div class="flex mb-4">${starSVG.repeat(5)}</div>
+    <p class="text-[#2c3e50] text-lg italic leading-relaxed max-w-xl mx-auto">
+      "${r.text}"
+    </p>
+  `;
+}
+
+function prevReview() {
+  current = (current - 1 + reviews.length) % reviews.length;
+  showReview(current);
+}
+
+function nextReview() {
+  current = (current + 1) % reviews.length;
+  showReview(current);
+}
+
+// Initial display
+showReview(current);
+
+// Auto slide every 5 seconds with pause on hover
+let autoSlide = setInterval(nextReview, 5000);
+const carouselContainer = document.getElementById('review-carousel');
+carouselContainer.addEventListener('mouseenter', () => clearInterval(autoSlide));
+carouselContainer.addEventListener('mouseleave', () => autoSlide = setInterval(nextReview, 5000));
